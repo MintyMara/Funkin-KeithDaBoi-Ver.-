@@ -1,6 +1,9 @@
 # Funkin-KeithDaBoi-Ver.-
 Development Mod Folder for "Funkin' (KeithDaBoi Ver.)".
 
+# Changelog
+View the changelog [Here!](CHANGELOG.md)
+
 # How to setup the mod folder in Funkin' (PC ONLY)
 
 1. Setup
