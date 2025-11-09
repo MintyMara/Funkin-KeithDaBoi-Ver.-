@@ -1,0 +1,123 @@
+import flixel.FlxG;
+import flixel.FlxSprite;
+import funkin.graphics.shaders.AdjustColorShader;
+import flixel.math.FlxAngle;
+import funkin.play.PlayState;
+import funkin.play.stage.Stage;
+import funkin.graphics.shaders.DropShadowShader;
+import funkin.play.character.CharacterType;
+import openfl.display.BitmapData;
+import flixel.graphics.FlxGraphic;
+import openfl.filters.ShaderFilter;
+
+class TestStageLightsStage extends Stage {
+	function new() {
+		super('testStageLights');
+	}
+
+    var colorShader:AdjustColorShader;
+    
+
+	function onCreate(event:ScriptEvent):Void {
+		super.onCreate(event);
+	}
+
+	public function onGameOver(event:ScriptEvent) {
+		super.onGameOver(event);
+		getBoyfriend().shader = null;
+	}
+
+    // Shader variables for characters
+
+	var colorShaderBf:AdjustColorShader;
+	var colorShaderDad:AdjustColorShader;
+	var colorShaderGf:AdjustColorShader;
+	var colorShaderBG:AdjustColorShader;
+
+	override function buildStage():Void // Build the stage shaders
+	{
+		super.buildStage();
+
+		// Characters shaders
+		colorShaderBf = new AdjustColorShader();
+		colorShaderBf.brightness = 0;
+		colorShaderBf.hue = -21;
+		colorShaderBf.contrast = 29;
+		colorShaderBf.saturation = -50;
+
+		colorShaderGf = new AdjustColorShader();
+		colorShaderGf.brightness = 0;
+		colorShaderGf.hue = 2;
+		colorShaderGf.contrast = 0;
+		colorShaderGf.saturation = 0;
+
+		colorShaderDad = new AdjustColorShader();
+		colorShaderDad.brightness = 0;
+		colorShaderDad.hue = 2;
+		colorShaderDad.contrast = 0;
+		colorShaderDad.saturation = 0;
+	}
+
+	override function addCharacter(character:BaseCharacter, charType:CharacterType):Void {
+		// Apply the shader automatically to each character as it gets added.
+		super.addCharacter(character, charType);
+		trace('Applied stage shader to ' + character.characterName);
+
+		var rim = new DropShadowShader();
+        rim.color = 0xF5CEAE;
+		character.shader = rim;
+		rim.attachedSprite = character;
+
+		switch(charType){
+			case CharacterType.BF:
+
+				rim.angle = 25;
+				rim.setAdjustColor(0, 0, 0, 0);
+
+				character.animation.onFrameChange.add(function() {
+					if (getBoyfriend() != null) {
+      			        rim.updateFrameInfo(getBoyfriend().frame);
+					}
+                });
+
+			case CharacterType.GF:
+
+				rim.angle = 0;
+				rim.setAdjustColor(0, 0, 0, 0);
+
+				character.animation.onFrameChange.add(function() {
+      		        rim.updateFrameInfo(getGirlfriend().frame);
+    		    });
+
+			case CharacterType.DAD:
+
+				rim.angle = 15;
+				rim.setAdjustColor(-20, -10, 0, 0);
+
+				character.animation.onFrameChange.add(function() {
+      		        rim.updateFrameInfo(getDad().frame);
+    		    });
+		}
+
+	}
+
+	override function onUpdate(event:UpdateScriptEvent):Void { // Update function to apply shaders
+		super.onUpdate(event);
+
+        // Apply shaders to characters only once
+		var bf = PlayState.instance.currentStage.getBoyfriend();
+		var gf = PlayState.instance.currentStage.getGirlfriend();
+		var dad = PlayState.instance.currentStage.getDad();
+
+		if (bf != null && bf.shader == null) {
+			bf.shader = colorShaderBf;
+		}
+		if (gf != null && gf.shader == null) {
+			gf.shader = colorShaderGf;
+		}
+		if (dad != null && dad.shader == null) {
+			dad.shader = colorShaderDad;
+		}
+	}
+
+}

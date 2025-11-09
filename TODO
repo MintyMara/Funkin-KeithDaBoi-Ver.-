@@ -2,20 +2,19 @@
 - Make the Game Over song based on the Naughtyness Filter
 
 -- ART & ASSETS --
-- Implement all CN!Temp art into the mod (and make new ones if needed)
+- Implement all original CN!Temp art into the mod
+- Make the *LucyWendysStage* stage
 
 -- SONG CHARTING --
 - Add Easy and Normal charts to Infernus
 - Implement Camera Events for all songs (do this at the end of the Charting Process)
 
 -- SONGS TO ADD --
-- Keep Up
 - One Kiss
-- Sandwich (Lucy 3rd Song)
-- Meetup (Legacy Mix)
+- Keep Up
 
 -- PLANNED SONGS --
 - Meetup (Pico Mix)
 
 -- REWORKS --
-- Rework the songs Infernus, and Lucy's 3rd song
+- Infernus Song

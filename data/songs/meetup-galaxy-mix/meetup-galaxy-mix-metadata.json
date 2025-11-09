@@ -1,7 +1,7 @@
 {
   "version": "2.2.4",
-  "songName": "jerking my shii off",
-  "artist": "KeithDaBoi",
+  "songName": "Meetup (Galaxy Mix)",
+  "artist": "KeithDaBoi (feat. ItzGalaxy)",
   "charter": "KeithDaBoi",
   "divisions": 96,
   "looped": false,
@@ -31,13 +31,14 @@
         "bf"
       ]
     },
-    "stage": "mainStage",
+    "stage": "testStageLights",
     "noteStyle": "funkin",
     "ratings": {
-      "easy": 0,
-      "hard": 0,
-      "normal": 0
+      "easy": 8,
+      "normal": 9,
+      "hard": 11
     },
+    "album": "lucyvolume1",
     "previewStart": 0,
     "previewEnd": 0
   },
@@ -47,7 +48,7 @@
     {
       "t": 0,
       "b": 0,
-      "bpm": 100,
+      "bpm": 164,
       "n": 4,
       "d": 4,
       "bt": [

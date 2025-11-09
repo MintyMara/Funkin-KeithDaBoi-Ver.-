@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "WENDY'S SPICY CHICKEN SANDWICH",
+  "name": "YOU SHOULDN'T SEE THIS IN STORY MODE",
   "titleAsset": "storymenu/titles/week1",
   "props": [
     {
@@ -53,5 +53,5 @@
     }
   ],
   "background": "#2E4659",
-  "songs": ["meetup", "infernus"]
+  "songs": ["meetup-galaxy-mix"]
 }
