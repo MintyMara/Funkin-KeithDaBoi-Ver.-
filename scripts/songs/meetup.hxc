@@ -37,8 +37,7 @@ class MeetupSong extends Song {
   /**
    * Don't replay the cutscene between restarts.
    */
-  function onSongRetry(event:ScriptEvent)
-  {
+  function onSongRetry(event:ScriptEvent) {
     super.onSongRetry(event);
 
     hasPlayedCutscene = true;
@@ -47,8 +46,7 @@ class MeetupSong extends Song {
   /**
    * Replay the cutscene after leaving the song.
    */
-  function onCreate(event:ScriptEvent):Void
-  {
+  function onCreate(event:ScriptEvent):Void {
     super.onCreate(event);
 
     hasPlayedCutscene = false;
