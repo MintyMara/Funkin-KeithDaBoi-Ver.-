@@ -1,4 +1,4 @@
-temple shit:
+template shit:
 
     "charactername": ["characterSticker1", "characterSticker2", "characterSticker3"],
 

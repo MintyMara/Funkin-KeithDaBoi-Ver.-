@@ -1,8 +1,14 @@
 {
     "title": "Funkin' (KeithDaBoi Ver.)",
     "description": "Random mod by KeithDaBoi, hefty amount of songs, nothing too special.",
-    "author": "KeithDaBoi",
-    "api_version": "0.7.4",
+    "contributors": [
+	    {
+            "name": "KeithDaBoi",
+            "role": "Main programmer, charter, artist, musician, basically most of the mod lmao",
+            "url": "https://www.youtube.com/@TheEpicKeith101"
+        }
+    ],
+    "api_version": "0.7.5",
     "mod_version": "1.0.0",
     "license": "CC BY 4.0,MIT"
 }

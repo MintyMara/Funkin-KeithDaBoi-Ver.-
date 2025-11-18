@@ -1,0 +1,22 @@
+import flixel.FlxG;
+import funkin.ui.mainmenu.MainMenuState;
+import funkin.ui.debug.DebugMenuSubState;
+import funkin.util.ReflectUtil;
+import funkin.modding.module.Module;
+
+class MainMenuKeithAddon extends Module {
+	var version:String = "dev-1.2";
+
+	public function new() {
+		super('MainMenuKeithAddon');
+	}
+
+	override function onUpdate(event:UpdateScriptEvent) {
+		super.onUpdate(event);
+
+		if (ReflectUtil.getClassNameOf(FlxG.state) == "funkin.ui.mainmenu.MainMenuState" && ReflectUtil.getClassNameOf(FlxG.state.subState) != "funkin.ui.debug.DebugMenuSubState") {
+			FlxG.mouse.visible = false;
+			FlxG.state.rightWatermarkText.text = "Funkin' (KeithDaBoi Ver.) | " + version;
+		}
+	}
+}
