@@ -19,7 +19,7 @@
       "hard"
     ],
     "characters": {
-      "player": "bf",
+      "player": "lucykeithpixel-playable",
       "girlfriend": "darnell",
       "opponent": "pico",
       "instrumental": "",
@@ -36,13 +36,13 @@
     "ratings": {
       "easy": 7,
       "normal": 9,
-      "hard": 10
+      "hard": 12
     },
     "album": "lucyvolume1",
     "previewStart": 0,
     "previewEnd": 0
   },
-  "generatedBy": "Friday Night Funkin' - v0.7.4",
+  "generatedBy": "Friday Night Funkin' - v0.7.5",
   "timeFormat": "ms",
   "timeChanges": [
     {

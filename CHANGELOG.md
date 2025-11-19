@@ -1,4 +1,4 @@
-## [dev-2.0-beta] - DATE HERE
+## [dev-2.0] - DATE HERE
 
 ### Added
 - Added the original sprites for all characters that were in the original ***Funkin' (Keith T. Boi Ver.)*** mod.
@@ -8,9 +8,6 @@
 
 ### Fixed
 - The mod no longer crashes the game due to an error in Boyfriend's "*ownedChars*" array having an extra comma.
-
-### Changed
-- Changed the album text to say "*KeithDaBoi Vol 1*", instead of the placeholder "*Nonsense Vol 1*".
 
 ### Removed
 - Removed the memes from the "*videos*" folder, as they just result in longer load times.
