@@ -1,4 +1,4 @@
-## [dev-2.0] - DATE HERE
+## [dev-2.0] - 11-19-2025
 
 ### Added
 - Added the original sprites for all characters that were in the original ***Funkin' (Keith T. Boi Ver.)*** mod.
