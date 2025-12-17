@@ -1,18 +1,3 @@
-## [dev-3.0] - Test GitHub Commit
-
-### Added
-- **Lucy's Week** now only displays the song **Infernus** if the player has already beaten the level.
-
-### Changed
-- Replaced all base intro texts with a couple of new ones.
-- Replaced all instances of **"KeithDaBoi"** in credits to **"MintyMara"**
-
-### Fixed
-- The Main Menu version text now displays the correct version (dev-3.0 as of this update).
-
-### Removed
-- Removed **Meetup (Galaxy Mix)** from the freeplay menu (it will be added back at a later date).
-
 ## [dev-2.0] - 11-19-2025
 
 ### Added
