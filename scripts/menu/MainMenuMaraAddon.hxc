@@ -4,11 +4,11 @@ import funkin.ui.debug.DebugMenuSubState;
 import funkin.util.ReflectUtil;
 import funkin.modding.module.Module;
 
-class MainMenuKeithAddon extends Module {
-	var version:String = "dev-1.2";
+class MainMenuMaraAddon extends Module {
+	var version:String = "dev-3.0";
 
 	public function new() {
-		super('MainMenuKeithAddon');
+		super('MainMenuMaraAddon');
 	}
 
 	override function onUpdate(event:UpdateScriptEvent) {

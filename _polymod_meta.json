@@ -1,11 +1,16 @@
 {
     "title": "Funkin' (KeithDaBoi Ver.)",
-    "description": "Random mod by KeithDaBoi, hefty amount of songs, nothing too special.",
+    "description": "Random mod by MintyMara, hefty amount of songs, nothing too special.",
     "contributors": [
 	    {
-            "name": "KeithDaBoi",
-            "role": "Main programmer, charter, artist, musician, basically most of the mod lmao",
+            "name": "MintyMara",
+            "role": "Co-Creator, charter, artist, musician, basically most of the mod.",
             "url": "https://www.youtube.com/@TheEpicKeith101"
+        },
+        {
+            "name": "ZeroNeo",
+            "role": "Voice Actor for Neo, also helped with mobile compatability testing.",
+            "url": "https://www.placeholderurl.com"
         }
     ],
     "api_version": "0.7.5",

@@ -1,11 +1,10 @@
 import funkin.ui.story.Level;
 import funkin.save.Save;
 
-class Weekend1Level extends Level
+class LucyWeekLevel extends Level
 {
-	function new()
-	{
-		super('weekend1');
+	function new() {
+		super('lucysweek');
 	}
 
   override function isUnlocked():Bool {
@@ -13,15 +12,15 @@ class Weekend1Level extends Level
   }
 
   function hasBeatenLevel():Bool {
-    return Save.instance.hasBeatenLevel('weekend1');
+    return Save.instance.hasBeatenLevel('lucysweek');
   }
 
   override function getSongDisplayNames(difficultyId:String):Array<String> {
     if (hasBeatenLevel()) {
-      // Blazin' is a secret song ;)
-      return ["Darnell", "Lit Up", "2hot", "Blazin'"];
+      // Show the song "Infernus" if the level has been beaten
+      return ["Meetup", "Infernus"];
     } else {
-      return ["Darnell", "Lit Up", "2hot"];
+      return ["Meetup"];
     }
   }
 }
