@@ -45,3 +45,5 @@ my error handling--is nonexistent
 the compiler hates--me personally
 console.log debugging--is peak performance
 im on the sun--im on the sun
+im listening to lofi--while writing this
+this message--is really rare
