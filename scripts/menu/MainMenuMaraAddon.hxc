@@ -5,7 +5,7 @@ import funkin.util.ReflectUtil;
 import funkin.modding.module.Module;
 
 class MainMenuMaraAddon extends Module {
-	var version:String = "dev-2.0";
+	var version:String = "dev-2.0-hotfix";
 
 	public function new() {
 		super('MainMenuMaraAddon');

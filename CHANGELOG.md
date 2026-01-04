@@ -1,3 +1,7 @@
+## [dev-2.0-hotfix] - 11-19-2025
+
+### The mod is now compatable with v0.8.X of [Friday Night Funkin'](https://github.com/FunkinCrew/Funkin).
+
 ## [dev-2.0] - 11-19-2025
 
 ### Added
