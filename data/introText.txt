@@ -47,3 +47,17 @@ console.log debugging--is peak performance
 im on the sun--im on the sun
 im listening to lofi--while writing this
 this message--is really rare
+double poop 7--shoutout to freakgg
+it is wednesday--my dudes
+code review said--needs more comments
+my variable names--are self documenting
+this is fine--im not stressed
+the build is broken--again somehow
+this readme file--is outdated
+refactoring is just--moving code around
+my tests pass locally--but fail in prod
+the error message--says nothing helpful
+im typing fast--making mistakes
+the merge conflict--has me sweating
+i should sleep--but one more line
+1981--was the year that
